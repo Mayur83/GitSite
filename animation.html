@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .animate
+        {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            /* animation-name: change; */
+        }
+        @keyframes change {
+            0%
+            {
+                background-color: purple;
+                transform: translateX(100px);
+            }
+            20%
+            {
+                background-color: red;
+                border: 20px;
+                transform: translateY(900px);
+            }
+            40%
+            {
+                background-color: yellow;
+                border-radius: 50%;
+            }
+            60%
+            {
+                background-color: dodgerblue;
+                border: 20px;
+            }
+            80%
+            {
+                background-color: lightgreen;
+            }
+            100%
+            {
+                background-color: green;
+            }
+        }
+        img
+        {
+            animation: move 2s linear 3;
+        }
+        @keyframes move {
+            0%
+            {
+                transform: translate(100px,100px);
+            }
+            100%
+            {
+                transform: translate(-100px,-100px);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="animate"></div>
+
+    <img src="../img/img.jpeg">
+
+</body>
+</html>
